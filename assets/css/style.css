@@ -22,21 +22,17 @@ h1 {
 .category {
     margin: 10px 0px;
 }
-.catBtn {
+button {
     margin: 10px 10px;
     padding: 5px;
     font-size: 20px;
 }
-.difBtn {
-    margin: 10px 10px;
-    padding: 5px;
-    font-size: 20px;
-}
+
 #question {
     margin: 10px 0px;
 }
 .ansBtn {
-    margin: 25px 0px;
+    margin: 25px 10px;
     padding: 10px;
     font-size: 20px;
 }
@@ -57,7 +53,7 @@ h1 {
 }
 
 #play-again {
-    margin: 25px 0px;
+    margin: 25px 10px;
     padding: 10px;
     font-size: 20px;
     text-align: center;
