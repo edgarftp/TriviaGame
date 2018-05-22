@@ -206,13 +206,13 @@ $(document).ready(function (){
                 var ansBtn = $("<button>").html(results[question].incorrect_answers[randAnsArray[i]]);
                 console.log(ansBtn);
                 ansBtn.attr("id", ("option_" + randAnsArray[i]));
-                ansBtn.addClass("btn btn-primary col-12 ansBtn d-block text-center");
+                ansBtn.addClass("btn btn-primary col-9 col-sm-9 col-lg-12 ansBtn text-center");
                 $("#ansBtnHolder").append(ansBtn);
             }else{
                 var ansBtn = $("<button>").html(results[question].correct_answer);
                 console.log(ansBtn);
                 ansBtn.attr("id", ("option_" + randAnsArray[i]));
-                ansBtn.addClass("btn btn-primary col-12 ansBtn d-block text-center");
+                ansBtn.addClass("btn btn-primary col-9 col-sm-9 col-lg-12 ansBtn text-center");
                 $("#ansBtnHolder").append(ansBtn);
             }
                 
