@@ -20,7 +20,7 @@ $(document).ready(function (){
         $("#catBtnHolder").empty();
         for (i=0; i<catArray.length; i++){
             var catBtn = $("<button>").text(catArray[i]);
-            catBtn.addClass("btn btn-success col-6 col-lg-3 catBtn");
+            catBtn.addClass("btn btn-success col-6 col-sm-6 col-lg-3 catBtn");
             catBtn.attr("id", i);
             $("#catBtnHolder").append(catBtn);
         }
