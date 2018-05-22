@@ -107,6 +107,7 @@ $(document).ready(function (){
     var display_timer = function () {
         timer--;
         if (timer == 0){
+            ans_class_changer(1);
             $("#timer").text("TIME'S UP!!");
             clearInterval(interval);
             $("#alertModal .modal-title").text("HA HA LOSER!!");
@@ -117,7 +118,7 @@ $(document).ready(function (){
             question++;
             unanswered++;
             if (question < 10){
-                setTimeout(display_game, 1700);
+                setTimeout(display_game, 2000);
             }else {
                 end_game();
             }
@@ -143,7 +144,7 @@ $(document).ready(function (){
             question++; 
             rightAns++;
             if (question < 10){
-                setTimeout(display_game, 1700);
+                setTimeout(display_game, 2000);
             }else {
                 end_game();
             }
@@ -157,7 +158,7 @@ $(document).ready(function (){
             question++;
             wrongAns++;
             if (question < 10){
-                setTimeout(display_game, 1700);
+                setTimeout(display_game, 2000);
             }else{
                 end_game();
             }
