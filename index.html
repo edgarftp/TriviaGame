@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+    <div class="row">
+        <div class="col-12">
+            <h1>Trivia Game</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 category">
+                <h3 id="header-2">Pick a Category</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12"  id="catBtnHolder">
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 hide"  id="difBtnHolder">
+                <button id="easy" class="difBtn btn btn-success col-3">Easy</button>
+                <button id="medium"class="difBtn btn btn-warning col-3">Medium</button>
+                <button id="hard"class="difBtn btn btn-danger col-3">Hard</button>
+            </div>
+        </div>
+
+        <img id="back" class="hide" src="assets/images/backbutton.png" alt="">
+        
+        <div class="row">
+            <div class="col-12 hide"  id="gameHolder">
+                <div class="row">   <h3 id="timer" class="col-12">:15 seconds left</h3>    </div>
+                <div class="row">   <h3 id="question" class="col-12"></h3>    </div>
+                <div class="row">   <div id="ansBtnHolder" class="col-12"></div>   </div>
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 hide"  id="gameStats">
+                <div class="row">   <h2 id="score-title" class="col-12">S C O R E</h2>    </div>
+                <div class="row">   <div id="score-var-holder" class="col-12"></div>    </div>
+                <div class="row">  <div class="col-12"> <button id="play-again" class="btn btn-success col-3"> Play Again</button></div>   </div>
+                
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+            </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+    
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+</html>
